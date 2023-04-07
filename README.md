@@ -7,13 +7,13 @@ This repository contains scripts for automating the retrieval and storage of eco
 ## Configuration
 - The following environmental variables must be set in order to use the scripts:
 
--- API_KEY: your FRED API key.
--- API_ROOT_URL: the root URL for the FRED API (usually https://api.stlouisfed.org).
--- DB_HOST: the hostname for the PostgreSQL database.
--- DB_PORT: the port number for the PostgreSQL database.
--- DB_NAME: the name of the PostgreSQL database.
--- DB_USER: the username for the PostgreSQL database.
--- DB_PASSWORD: the password for the PostgreSQL database.
+- API_KEY: your FRED API key.
+- API_ROOT_URL: the root URL for the FRED API (usually https://api.stlouisfed.org).
+- DB_HOST: the hostname for the PostgreSQL database.
+- DB_PORT: the port number for the PostgreSQL database.
+- DB_NAME: the name of the PostgreSQL database.
+- DB_USER: the username for the PostgreSQL database.
+- DB_PASSWORD: the password for the PostgreSQL database.
 ## Usage
 - The main script for pulling and storing data is populate.py. This script takes a number of command-line arguments that specify the data to be pulled and the time period to be covered. For example, to pull quarterly data for the Gross Domestic Product (GDP) from 2000 to 2020, use the following command:
 -- python populate.py GDP Q 2000-01-01 2020-01-01
